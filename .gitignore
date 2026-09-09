@@ -6,3 +6,5 @@ dist
 preview-*.png
 slice-*.png
 
+
+.vercel

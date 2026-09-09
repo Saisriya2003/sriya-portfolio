@@ -7,7 +7,12 @@ export function useReveal() {
     const node = ref.current;
     if (!node) return;
 
-    const show = () => node.classList.add("is-visible");
+    const show = () => {
+      node.classList.add("is-visible");
+      node.querySelectorAll(".stagger > *").forEach((child, i) => {
+        child.style.setProperty("--i", String(i));
+      });
+    };
     const fallback = setTimeout(show, 1800);
 
     const observer = new IntersectionObserver(

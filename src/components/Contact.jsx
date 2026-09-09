@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { profile } from "../data";
 import { useReveal } from "../hooks/useReveal";
+import ResumeLink from "./ResumeLink";
 
 export default function Contact() {
   const ref = useReveal();
@@ -50,6 +51,7 @@ export default function Contact() {
               </a>
             </li>
           </ul>
+          <ResumeLink className="btn btn--fill contact__resume" />
         </div>
 
         <form className="form" onSubmit={onSubmit}>

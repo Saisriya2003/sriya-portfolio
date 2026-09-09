@@ -13,7 +13,7 @@ export default function Skills() {
         </h2>
       </div>
 
-      <div className="skill-groups">
+      <div className="skill-groups stagger">
         {Object.entries(skills).map(([group, items]) => (
           <div key={group} className="skill-group">
             <p className="skill-group__label">{group}</p>

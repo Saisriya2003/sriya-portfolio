@@ -1,10 +1,12 @@
 import { profile } from "../data";
+import ResumeLink from "./ResumeLink";
 
 export default function Hero() {
   return (
     <section className="hero" id="top">
       <div className="orb orb--a" />
       <div className="orb orb--b" />
+      <div className="orb orb--c" />
 
       <div className="hero__copy">
         <div className="hero__meta reveal">
@@ -26,6 +28,7 @@ export default function Hero() {
           <a className="btn btn--fill" href="#projects">
             View selected work
           </a>
+          <ResumeLink className="btn btn--ghost" />
           <a className="btn btn--ghost" href={`mailto:${profile.email}`}>
             <span className="btn__full">{profile.email}</span>
             <span className="btn__short">Email me</span>

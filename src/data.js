@@ -8,6 +8,8 @@ export const profile = {
   email: "saisriyavarma@gmail.com",
   linkedin: "https://www.linkedin.com/in/saisriyavarma",
   github: "https://github.com/Saisriya2003",
+  resume: "/Pettem_Sai_Sriya_Resume.pdf",
+  resumeFile: "Pettem_Sai_Sriya_Resume.pdf",
   tagline:
     "I design and ship AI-aware web products — from responsive interfaces to reliable APIs — with a bias for clarity, performance, and craft.",
 };

@@ -13,7 +13,7 @@ export default function Education() {
         </h2>
       </div>
 
-      <ol className="timeline">
+      <ol className="timeline stagger">
         {education.map((item) => (
           <li key={item.school} className="timeline__item">
             <div className="timeline__dot" />

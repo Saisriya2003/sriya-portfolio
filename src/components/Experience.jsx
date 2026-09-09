@@ -22,7 +22,7 @@ export default function Experience() {
           </div>
           <p className="job__period">{job.period}</p>
         </header>
-        <ul className="job__list">
+        <ul className="job__list stagger">
           {job.points.map((point) => (
             <li key={point}>{point}</li>
           ))}

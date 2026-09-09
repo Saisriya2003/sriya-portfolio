@@ -6,6 +6,7 @@ function Card({ project, index }) {
   const card = useRef(null);
 
   const onMove = (e) => {
+    if (!window.matchMedia("(pointer: fine)").matches) return;
     const el = card.current;
     const rect = el.getBoundingClientRect();
     const px = (e.clientX - rect.left) / rect.width;
@@ -63,7 +64,7 @@ export default function Projects() {
           Projects where <em>AI meets product.</em>
         </h2>
       </div>
-      <div className="project-grid">
+      <div className="project-grid stagger">
         {projects.map((project, i) => (
           <Card key={project.title} project={project} index={i} />
         ))}

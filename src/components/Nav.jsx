@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ResumeLink from "./ResumeLink";
 
 const links = [
   { href: "#about", label: "About" },
@@ -20,10 +21,22 @@ export default function Nav() {
       const max = document.documentElement.scrollHeight - window.innerHeight;
       setProgress(max > 0 ? y / max : 0);
     };
+    const onResize = () => {
+      if (window.innerWidth > 900) setOpen(false);
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onResize);
+    };
   }, []);
+
+  useEffect(() => {
+    document.body.classList.toggle("nav-open", open);
+    return () => document.body.classList.remove("nav-open");
+  }, [open]);
 
   return (
     <header className={`nav ${scrolled ? "is-scrolled" : ""}`}>
@@ -38,7 +51,10 @@ export default function Nav() {
             {l.label}
           </a>
         ))}
-        <a className="nav__cta" href="#contact" onClick={() => setOpen(false)}>
+        <ResumeLink className="nav__cta" onClick={() => setOpen(false)}>
+          Resume
+        </ResumeLink>
+        <a className="nav__cta nav__cta--fill" href="#contact" onClick={() => setOpen(false)}>
           Let’s talk
         </a>
       </nav>
