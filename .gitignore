@@ -1,0 +1,8 @@
+node_modules
+dist
+.DS_Store
+*.local
+.chrome-shot
+preview-*.png
+slice-*.png
+
