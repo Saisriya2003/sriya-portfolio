@@ -2,7 +2,7 @@ export const profile = {
   name: "Pettem Sai Sriya",
   firstName: "Sai Sriya",
   role: "Full Stack Developer",
-  company: "Handshake AI",
+  company: "GenAI Lakes",
   availability: "Open to work",
   location: "Hyderabad, India",
   phone: "9921890019",
@@ -20,6 +20,7 @@ export const experience = [
     role: "AI Evaluation Specialist",
     company: "Handshake AI",
     period: "Jul 2026 — Present",
+    type: "Contract, concluding",
     points: [
       "Design terminal-based benchmark tasks that evaluate coding agents on multi-step Linux, Git, Bash, and Python workflows.",
       "Build reproducible environments with automated validation so tasks score consistently across model runs and reviewers.",

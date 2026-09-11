@@ -19,7 +19,10 @@ export default function Experience() {
             <header className="job__head">
               <div>
                 <p className="job__role">{job.role}</p>
-                <p className="job__company">{job.company}</p>
+                <p className="job__company">
+                  {job.company}
+                  {job.type ? <span className="job__type"> · {job.type}</span> : null}
+                </p>
               </div>
               <p className="job__period">{job.period}</p>
             </header>

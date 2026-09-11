@@ -52,7 +52,7 @@ export default function Hero() {
           <span className="portrait__ring" aria-hidden="true" />
           <img src="/sriya.jpg" alt="Pettem Sai Sriya" />
         </div>
-        <p className="portrait__caption">Hyderabad · Handshake AI</p>
+        <p className="portrait__caption">Hyderabad · Open to work</p>
       </div>
 
       <a className="scroll-cue" href="#about" aria-label="Scroll to about">

@@ -828,6 +828,11 @@ html.js .is-visible .stagger > * {
   color: var(--copper);
 }
 
+.job__type {
+  color: var(--muted);
+  font-weight: 400;
+}
+
 .job__period {
   color: var(--muted);
   white-space: nowrap;

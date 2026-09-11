@@ -163,7 +163,7 @@ def build():
 
     role_line(
         doc,
-        "AI Evaluation Specialist  |  Handshake AI",
+        "AI Evaluation Specialist  |  Handshake AI  |  Contract (concluding)",
         "Jul 2026 – Present",
     )
     for item in [

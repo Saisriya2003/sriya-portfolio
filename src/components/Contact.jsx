@@ -30,8 +30,8 @@ export default function Contact() {
       <div className="contact-grid">
         <div className="contact__aside">
           <p className="about-copy">
-            Open to full-time roles in Hyderabad — full-stack, frontend, or applied AI product
-            work. Immediately available.
+            Open to full-time roles in Hyderabad — full-stack, frontend, or applied AI. Currently
+            wrapping a contract at Handshake AI.
           </p>
           <ul className="contact__links">
             <li>
