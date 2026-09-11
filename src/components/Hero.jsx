@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="hero__meta reveal">
           <span className="pill">{profile.role}</span>
           <span className="dot" />
-          <span>{profile.company}</span>
+          <span>{profile.availability}</span>
           <span className="dot" />
           <span>{profile.location}</span>
         </div>
@@ -52,7 +52,7 @@ export default function Hero() {
           <span className="portrait__ring" aria-hidden="true" />
           <img src="/sriya.jpg" alt="Pettem Sai Sriya" />
         </div>
-        <p className="portrait__caption">Hyderabad · GenAI Lakes</p>
+        <p className="portrait__caption">Hyderabad · Handshake AI</p>
       </div>
 
       <a className="scroll-cue" href="#about" aria-label="Scroll to about">

@@ -11,6 +11,8 @@ const items = [
   "RAG",
   "Dashboards",
   "Voice AI",
+  "Prompt Engineering",
+  "AWS",
 ];
 
 export default function Marquee() {

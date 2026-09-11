@@ -136,18 +136,18 @@ def build():
     heading(doc, "Professional Summary")
     body(
         doc,
-        "Full Stack Developer at GenAI Lakes building React, TypeScript, Node.js, and Python applications. "
-        "Skilled in REST APIs, FastAPI, MongoDB, PostgreSQL, and Generative AI including RAG, embeddings, "
-        "semantic search, and LLM-based document question answering. B.Tech ECE, CGPA 7.6.",
+        "Full Stack Developer (immediately available, Hyderabad) with 1+ year building React, Node.js, "
+        "and Python products. Shipped REST APIs, dashboards, and Generative AI features including RAG, "
+        "embeddings, semantic search, and LLM document Q&A. B.Tech ECE, CGPA 7.6.",
         after=1,
     )
 
     heading(doc, "Technical Skills")
     skills = [
         ("Languages: ", "Python, JavaScript, TypeScript, SQL, HTML, CSS"),
-        ("Frameworks: ", "React, Node.js, Express.js, FastAPI, Tailwind CSS"),
-        ("Databases: ", "MongoDB, PostgreSQL, MySQL, SQLAlchemy"),
-        ("Developer Tools: ", "Git, GitHub, VS Code, Vite, REST APIs, JWT"),
+        ("Frameworks: ", "React, FastAPI, Node.js, Express.js, Socket.IO, Tailwind CSS"),
+        ("Databases: ", "PostgreSQL, MongoDB, MySQL, Redis, SQLAlchemy"),
+        ("Developer Tools: ", "Git, GitHub Actions, Docker, Pytest, Vite, REST APIs, JWT"),
         (
             "AI / ML: ",
             "Generative AI, RAG, Large Language Models (LLM), Embeddings, Semantic Search, Neural Networks, Voice AI",
@@ -163,27 +163,65 @@ def build():
 
     role_line(
         doc,
-        "Full Stack Developer  |  GenAI Lakes  |  Hyderabad, India",
-        "July 2025 – Present",
+        "AI Evaluation Specialist  |  Handshake AI",
+        "Jul 2026 – Present",
     )
     for item in [
-        "Designed and developed full-stack web applications using React, JavaScript, HTML, CSS, and REST APIs.",
-        "Integrated secure RESTful APIs and backend services; implemented database operations with MongoDB, MySQL, and PostgreSQL.",
-        "Debugged and tested application performance and reliability while shipping Generative AI and web features with cross-functional teams.",
+        "Design terminal-based benchmark tasks that evaluate coding agents on multi-step Linux, Git, Bash, and Python workflows.",
+        "Build reproducible environments with automated validation so tasks score consistently across model runs and reviewers.",
+        "Revise task specifications and graders after human review when an agent passes a check but misses the intended engineering behavior.",
     ]:
         bullet(doc, item)
 
     role_line(
         doc,
-        "Frontend Development Intern  |  AICTE",
-        "July 2024 – February 2025",
+        "Full Stack Developer  |  GenAI Lakes  |  Hyderabad, India",
+        "Jul 2025 – Sep 2026",
     )
-    bullet(
+    for item in [
+        "Designed and developed scalable full-stack web applications using modern frontend and backend technologies.",
+        "Built responsive, user-centric interfaces while integrating secure RESTful APIs and backend services.",
+        "Optimized application performance, database operations, and system reliability through debugging and testing.",
+        "Collaborated with cross-functional teams to deliver AI-driven and web-based solutions aligned with business requirements.",
+    ]:
+        bullet(doc, item)
+
+    role_line(
         doc,
-        "Completed the AICTE Frontend Development Internship; built a resume builder web application using HTML, CSS, JavaScript, React, and responsive UI.",
+        "LLM Prompt Engineer  |  Turing",
+        "Aug 2025 – Jan 2026",
     )
+    for item in [
+        "Delivered high-quality multi-turn AI conversations focused on realistic user–assistant interactions and contextual accuracy.",
+        "Designed and optimized prompt workflows to improve reasoning, instruction-following, and response consistency.",
+        "Evaluated AI-generated outputs using quality guidelines for relevance, clarity, and conversational flow.",
+    ]:
+        bullet(doc, item)
+
+    role_line(
+        doc,
+        "Aether  |  Outlier.ai",
+        "May 2026 – Jun 2026",
+    )
+    for item in [
+        "Recorded multilingual voice samples using predefined prompts to support AI model training.",
+        "Followed strict quality and language guidelines to ensure accurate and consistent speech data.",
+    ]:
+        bullet(doc, item)
 
     heading(doc, "Projects")
+
+    role_line(
+        doc,
+        "PulseBoard — Real-Time Team Collaboration Platform  |  github.com/Saisriya2003/pulseboard",
+        "September 2026",
+    )
+    sub_line(doc, "Tech: Python, FastAPI, Socket.IO, React, TypeScript, PostgreSQL, Redis, Docker, Pytest, GitHub Actions")
+    for item in [
+        "Built a real-time kanban platform: workspaces, drag-and-drop boards, labels, checklists, @mentions, reactions, and live presence over Socket.IO; 30 Pytest integration tests run in GitHub Actions CI.",
+        "Designed a four-role permission model (owner/admin/member/viewer) enforced server-side with JWT auth, invitations, audit logging, and Redis caching; containerized with Docker Compose.",
+    ]:
+        bullet(doc, item)
 
     role_line(
         doc,
@@ -191,21 +229,19 @@ def build():
         "July 2026 – August 2026",
     )
     sub_line(doc, "Tech: TypeScript, React, Python, FastAPI, PostgreSQL, MongoDB, REST APIs, Tailwind CSS")
-    for item in [
-        "Built a full-stack platform to create, schedule, and publish content across YouTube, Instagram, Facebook, Twitter, LinkedIn, and TikTok.",
-        "Developed a TypeScript React frontend (Vite, Tailwind CSS) and a Python FastAPI backend with REST APIs, JWT, PostgreSQL, and MongoDB; added Gemini captions, video analysis, dashboards, and OAuth.",
-    ]:
-        bullet(doc, item)
+    bullet(
+        doc,
+        "Built a full-stack platform to create, schedule, and publish content to YouTube, Instagram, Facebook, Twitter, LinkedIn, and TikTok: TypeScript React frontend, FastAPI backend with JWT, PostgreSQL, MongoDB, OAuth, Gemini captions, and analytics dashboards.",
+    )
 
     role_line(
         doc,
         "Manager Monitoring Assistant — AI Status Call System",
         "2025",
     )
-    sub_line(doc, "Tech: React, Node.js, Express.js, MongoDB, MySQL, REST APIs, Voice AI")
     bullet(
         doc,
-        "Developed an AI status-call system for employee and field-agent tracking with outbound calls, transcription, monitoring dashboards, alerts, call logging, and reporting.",
+        "Shipped an AI status-call system for employee and field-agent tracking with automated outbound calls, transcription, live dashboards, alerts, and reporting. Tech: React, Node.js, Express.js, MongoDB, MySQL, Voice AI.",
     )
 
     role_line(
@@ -213,10 +249,9 @@ def build():
         "AI-Based RAG Application — Document Question Answering",
         "2025",
     )
-    sub_line(doc, "Tech: Python, FastAPI, React, PostgreSQL, RAG, LLM, Embeddings")
     bullet(
         doc,
-        "Built a Retrieval-Augmented Generation (RAG) system with document ingestion, embeddings, semantic search, and LLM answers through FastAPI, React, and PostgreSQL.",
+        "Built a Retrieval-Augmented Generation pipeline with document ingestion, embeddings, semantic search, and context-aware LLM answers. Tech: Python, FastAPI, React, PostgreSQL.",
     )
 
     role_line(
@@ -226,7 +261,7 @@ def build():
     )
     bullet(
         doc,
-        "Built a Python deep learning model using artificial neural networks and backpropagation to score friend-request authenticity on social-network data. Tech: Python, Machine Learning, Neural Networks.",
+        "Built a Python deep learning model using artificial neural networks and backpropagation to score friend-request authenticity on social-network data.",
     )
 
     heading(doc, "Education")
@@ -237,7 +272,7 @@ def build():
     )
     body(
         doc,
-        "Intermediate  |  Telangana State Residential Junior College (Girls), Bheemadevarapalle  |  Jun 2019 – Jul 2021  |  88%",
+        "Intermediate  |  Telangana State Residential Junior College (Girls), Huzurabad  |  Jun 2019 – Jul 2021  |  88%",
         after=1,
     )
     body(
@@ -249,7 +284,7 @@ def build():
     heading(doc, "Certifications")
     body(
         doc,
-        "AICTE Frontend Development Internship (Responsive UI, HTML, CSS, JavaScript, React). Hands-on certifications in API Integration, Database Management, and Full-Stack Development.",
+        "AWS and Google Cloud foundational badges. Certifications in Generative AI, Prompt Engineering, Machine Learning, React.js, JavaScript, and Python. AICTE Frontend Development Internship; API Integration, Database Management, and Full-Stack Development.",
         after=0,
     )
 

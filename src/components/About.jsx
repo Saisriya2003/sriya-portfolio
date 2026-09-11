@@ -22,9 +22,9 @@ export default function About() {
 
       <div className="about-grid">
         <p className="about-copy">
-          I’m a full stack developer at GenAI Lakes, focused on interfaces people actually enjoy
-          using and backends that stay dependable under real load. I like turning messy ideas —
-          voice, retrieval, avatars, monitoring — into clear product surfaces.
+          I’m a full stack developer — previously at GenAI Lakes (Jul 2025 – Sep 2026) and now an
+          AI Evaluation Specialist at Handshake AI. I like turning messy ideas — voice, retrieval,
+          avatars, monitoring, agent benchmarks — into clear product and evaluation surfaces.
         </p>
         <p className="about-copy muted">
           My background is in Electronics & Communication Engineering, but my work lives in

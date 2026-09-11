@@ -49,6 +49,11 @@ function Card({ project, index }) {
           <span key={t}>{t}</span>
         ))}
       </div>
+      {project.link ? (
+        <a className="project__link" href={project.link} target="_blank" rel="noreferrer">
+          View on GitHub →
+        </a>
+      ) : null}
     </article>
   );
 }
